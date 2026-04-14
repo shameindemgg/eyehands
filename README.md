@@ -2,10 +2,20 @@
 
 AI agents on Windows are slow because every screenshot round-trips through the cloud. Claude Computer Use takes 2-4 seconds just to see the screen. eyehands runs locally and does it in 57ms.
 
-```bash
-pip install eyehands
-eyehands
+Download the Windows .zip from [portal.fireal.dev/eyehands/](https://portal.fireal.dev/eyehands/) or [GitHub Releases](https://github.com/shameindemgg/eyehands/releases), extract, and run:
+
 ```
+eyehands.exe
+```
+
+That's the whole setup. HTTP server on `localhost:7331`, works from any language:
+
+```bash
+curl http://localhost:7331/screenshot --output screen.jpg
+curl -X POST http://localhost:7331/click_at -d "{\"x\":500,\"y\":300}"
+```
+
+Or use the Python SDK (`pip install eyehands-sdk`):
 
 ```python
 from eyehands import EyehandsClient
@@ -15,21 +25,16 @@ c.click_at(500, 300)             # instant
 c.type_text("hello world")      # native SendInput, not clipboard paste
 ```
 
-That's the whole setup. HTTP server on `localhost:7331`, works from any language. The Python SDK (`pip install eyehands-sdk`) wraps it, but raw `curl` works too:
-
-```bash
-curl http://localhost:7331/screenshot --output screen.jpg
-curl -X POST http://localhost:7331/click_at -d "{\"x\":500,\"y\":300}"
-```
-
 | | eyehands | Claude Computer Use |
 |---|---|---|
 | Screenshot | 57ms | 2-4s |
 | 5-action batch | 67ms | 3-5s |
 | Resolution | 1920x1080 | 1456x816 |
-| OCR text search | Yes | No |
+| OCR text search | Optional* | No |
 | UI Automation | Yes | No |
 | Games / pointer-lock | Yes | No |
+
+\* OCR (`/find`) requires ~2GB of EasyOCR/PyTorch dependencies, not bundled in the standalone .exe. Install from source or add easyocr to system Python to enable. All other endpoints work out of the box.
 
 7-day free trial, then $49 one-time at [portal.fireal.dev](https://portal.fireal.dev). No subscription.
 
@@ -129,6 +134,6 @@ Switch when the 2-4 second screenshot latency is killing your agent's throughput
 
 ## Pricing
 
-14-day trial, all features. Then **$49 one-time** at [portal.fireal.dev](https://portal.fireal.dev). Per-machine activation, no subscription.
+7-day trial, all features. Then **$49 one-time** at [portal.fireal.dev](https://portal.fireal.dev). Per-machine activation, no subscription.
 
 [Issues](https://github.com/shameindemgg/eyehands/issues) · [portal.fireal.dev](https://portal.fireal.dev) · fireal6353@gmail.com
