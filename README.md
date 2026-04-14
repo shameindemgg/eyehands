@@ -110,7 +110,7 @@ All coordinates are physical screen pixels (Per-Monitor DPI v2). POST endpoints 
 | GET | `/license` | License status |
 | POST | `/activate` | Activate license key |
 | POST | `/update` | Self-update to latest version |
-| GET | `/openapi.json` | OpenAPI spec (served by the running server) |
+| GET | `/openapi.json` | OpenAPI spec |
 
 ## Limitations
 
