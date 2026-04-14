@@ -31,7 +31,7 @@ curl -X POST http://localhost:7331/click_at -d "{\"x\":500,\"y\":300}"
 | UI Automation | Yes | No |
 | Games / pointer-lock | Yes | No |
 
-14-day free trial, then $49 one-time at [portal.fireal.dev](https://portal.fireal.dev). No subscription.
+7-day free trial, then $49 one-time at [portal.fireal.dev](https://portal.fireal.dev). No subscription.
 
 ## How it works
 
@@ -57,13 +57,21 @@ from eyehands.openai_tools import tools, dispatch
 
 Or skip the SDK and hit the endpoints directly from Go, Rust, Node, whatever.
 
+## Browser extension
+
+eyehands ships with a browser extension (`ext/` folder) that captures your screen at full resolution through the browser. Install it once and any agent gets the same screenshot quality that Claude gets with Claude in Chrome.
+
+Works on Chrome, Edge, Opera (via CDP), and Firefox (via captureVisibleTab). With the server running, open `http://localhost:7331/ext/setup` for guided installation.
+
+When connected, agents use `GET /ext/screenshot` instead of `/screenshot`. If the extension isn't running, it falls back to native capture automatically.
+
 ## Endpoints
 
 All coordinates are physical screen pixels (Per-Monitor DPI v2). POST endpoints take JSON. Auth via bearer token (printed at startup, saved to `.eyehands-token`).
 
 | Method | Endpoint | What it does |
 |--------|----------|-------------|
-| GET | `/ping` | Health check, version, license status |
+| GET | `/ping` | Health check, version, license, extension status |
 | GET | `/cursor_pos` | Current cursor `{x, y}` |
 | GET | `/screenshot` | JPEG capture, full screen or region |
 | GET | `/screenshot_b64` | Same thing, base64 JSON |
@@ -71,6 +79,10 @@ All coordinates are physical screen pixels (Per-Monitor DPI v2). POST endpoints 
 | GET | `/latest_b64` | Latest frame, base64 JSON + metadata |
 | GET | `/view` | Live HTML page with auto-refresh overlay |
 | GET | `/find` | OCR text search, returns coordinates |
+| GET | `/ext/screenshot` | Full-res screenshot via browser extension (falls back to native) |
+| GET | `/ext/screenshot_b64` | Same thing, base64 JSON |
+| GET | `/ext/setup` | Browser extension install page (no auth) |
+| GET | `/ext/status` | Extension connection status |
 | POST | `/move` | Relative mouse move `{dx, dy}` |
 | POST | `/move_absolute` | Absolute move `{x, y}` |
 | POST | `/click` | Click `{button: "left"\|"right"\|"middle"}` |
@@ -90,6 +102,10 @@ All coordinates are physical screen pixels (Per-Monitor DPI v2). POST endpoints 
 | GET | `/ui/find` | Search elements by name, type, depth |
 | GET | `/ui/at` | Element at screen coordinates |
 | GET | `/ui/tree` | Nested element tree |
+| GET | `/license` | License status |
+| POST | `/activate` | Activate license key |
+| POST | `/update` | Self-update to latest version |
+| GET | `/openapi.json` | OpenAPI spec |
 
 ## Limitations
 
