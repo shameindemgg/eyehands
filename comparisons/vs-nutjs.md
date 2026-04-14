@@ -27,7 +27,7 @@ If you're building a Node.js automation script and you need cross-platform, nut.
 | Windows UI Automation | ❌ | ✅ first-class |
 | Capture speed | ~20-30 fps | up to ~120 fps (DXGI) |
 | AI agent integration | ❌ | ✅ (REST + SKILL.md) |
-| License | Apache-2.0 (commercial license available) | Proprietary ($29 one-time, 14-day trial) |
+| License | Apache-2.0 (commercial license available) | Proprietary ($49 one-time, 14-day trial) |
 
 ## Where nut.js wins
 

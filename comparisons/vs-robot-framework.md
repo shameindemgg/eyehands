@@ -28,7 +28,7 @@ They're not really competitors — Robot Framework is a test framework, eyehands
 | Pointer-lock apps | Library-dependent | ✅ `SendInput` |
 | AI agent integration | ❌ (batch runner model) | ✅ (REST + SKILL.md) |
 | CI integration | ✅ mature | Via curl / HTTP |
-| License | Apache-2.0 | Proprietary ($29 one-time, 14-day trial) |
+| License | Apache-2.0 | Proprietary ($49 one-time, 14-day trial) |
 
 ## Where Robot Framework wins
 

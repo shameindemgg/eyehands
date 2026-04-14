@@ -27,7 +27,7 @@ If you're maintaining an existing AutoIt script, or you want a compiled `.exe` t
 | AI agent integration | ❌ | ✅ (REST + SKILL.md) |
 | Standalone `.exe` | ✅ (Aut2Exe) | ❌ (Python) |
 | Last major release | 2018 (3.3.14.5) | Active |
-| License | Freeware (closed source) | Proprietary ($29 one-time, 14-day trial) |
+| License | Freeware (closed source) | Proprietary ($49 one-time, 14-day trial) |
 
 ## Where AutoIt still wins
 

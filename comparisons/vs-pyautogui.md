@@ -29,7 +29,7 @@ If you're writing a one-off Python script to fill in a form, PyAutoGUI is probab
 | Capture backend | PIL `ImageGrab` | DXGI (BetterCam/DXcam) + mss fallback |
 | Capture speed | ~5 fps | up to ~120 fps |
 | Auth | N/A (in-process) | Bearer token on all endpoints |
-| License | BSD | Proprietary ($29 one-time, 14-day trial) |
+| License | BSD | Proprietary ($49 one-time, 14-day trial) |
 
 ## Where PyAutoGUI wins
 

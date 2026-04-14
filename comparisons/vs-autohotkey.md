@@ -27,7 +27,7 @@ If you want to remap Caps Lock to Escape, build a window switcher, or write a st
 | OCR | ❌ (third-party libraries) | ✅ built-in (`/find`) |
 | AI agent integration | ❌ | ✅ (REST, SKILL.md) |
 | Multi-monitor abs coords | Manual | ✅ `VIRTUALDESK` |
-| License | GPL | Proprietary ($29 one-time, 14-day trial) |
+| License | GPL | Proprietary ($49 one-time, 14-day trial) |
 
 ## Where AutoHotkey wins
 

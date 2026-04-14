@@ -72,7 +72,7 @@ eyehands' packaged `SKILL.md` codifies this as a rule: **screenshots are the las
 
 ## The bottom line
 
-If your Claude Code desktop automation workflow is "screenshot -> vision model -> coordinates -> click", you're leaving money on the table. eyehands has a 14-day free trial with all features, then it's $29 one-time. No tiers, no feature gating. Typical payback on the $29 is one or two medium-sized automation sessions, based on my own bills.
+If your Claude Code desktop automation workflow is "screenshot -> vision model -> coordinates -> click", you're leaving money on the table. eyehands has a 14-day free trial with all features, then it's $49 one-time. No tiers, no feature gating. Typical payback on the $49 is one or two medium-sized automation sessions, based on my own bills.
 
 ## The code
 

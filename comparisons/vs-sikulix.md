@@ -25,7 +25,7 @@ Both solve "click this thing on screen" but from very different angles. SikuliX 
 | Pointer-lock apps | Partial | ✅ (SendInput) |
 | Multi-monitor | Yes | ✅ `VIRTUALDESK` |
 | AI agent integration | ❌ (designed for scripts) | ✅ (REST + SKILL.md) |
-| License | MIT | Proprietary ($29 one-time, 14-day trial) |
+| License | MIT | Proprietary ($49 one-time, 14-day trial) |
 
 ## Where SikuliX wins
 

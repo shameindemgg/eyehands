@@ -28,7 +28,7 @@ These are different shapes of tool. NirCmd is great for shell scripts and batch 
 | Shutdown / registry / clipboard | ✅ | ❌ |
 | AI agent integration | ❌ | ✅ (REST, SKILL.md) |
 | Speed | Launches per call | Long-running server |
-| License | Freeware | Proprietary ($29 one-time, 14-day trial) |
+| License | Freeware | Proprietary ($49 one-time, 14-day trial) |
 
 ## Where NirCmd wins
 

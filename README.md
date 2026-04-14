@@ -31,7 +31,7 @@ curl -X POST http://localhost:7331/click_at -d "{\"x\":500,\"y\":300}"
 | UI Automation | Yes | No |
 | Games / pointer-lock | Yes | No |
 
-14-day free trial, then $29 one-time at [portal.fireal.dev](https://portal.fireal.dev). No subscription.
+14-day free trial, then $49 one-time at [portal.fireal.dev](https://portal.fireal.dev). No subscription.
 
 ## How it works
 
@@ -113,6 +113,6 @@ Switch when the 2-4 second screenshot latency is killing your agent's throughput
 
 ## Pricing
 
-14-day trial, all features. Then **$29 one-time** at [portal.fireal.dev](https://portal.fireal.dev). Per-machine activation, no subscription.
+14-day trial, all features. Then **$49 one-time** at [portal.fireal.dev](https://portal.fireal.dev). Per-machine activation, no subscription.
 
 [Issues](https://github.com/shameindemgg/eyehands/issues) · [portal.fireal.dev](https://portal.fireal.dev) · fireal6353@gmail.com

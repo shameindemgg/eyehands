@@ -39,7 +39,7 @@ eyehands is roughly **50x faster** for raw automation. That matters more than it
 
 Computer Use charges per action at Anthropic's standard token rates — roughly **$0.045 per action** at Opus pricing. For an agent that takes 100 actions to complete a task, that's $4.50 per task.
 
-eyehands is **$29 once** and runs forever on your machine. The only ongoing cost is whatever you pay for the LLM itself (which you're paying regardless).
+eyehands is **$49 once** and runs forever on your machine. The only ongoing cost is whatever you pay for the LLM itself (which you're paying regardless).
 
 For high-volume automation, the cost difference is significant. For occasional use, the convenience of Computer Use's zero-setup may outweigh the per-action cost.
 
