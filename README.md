@@ -2,7 +2,7 @@
 
 AI agents on Windows are slow because every screenshot round-trips through the cloud. Claude Computer Use takes 2-4 seconds just to see the screen. eyehands runs locally and does it in 57ms.
 
-Download the Windows .zip from [portal.fireal.dev/eyehands/](https://portal.fireal.dev/eyehands/) or [GitHub Releases](https://github.com/shameindemgg/eyehands/releases), extract, and run:
+Download the Windows .zip from [fireal.dev/eyehands/](https://fireal.dev/eyehands/) or [GitHub Releases](https://github.com/shameindemgg/eyehands/releases), extract, and run:
 
 ```
 eyehands.exe
@@ -36,7 +36,7 @@ c.type_text("hello world")      # native SendInput, not clipboard paste
 
 \* OCR (`/find`) requires ~2GB of EasyOCR/PyTorch dependencies, not bundled in the standalone .exe. Install from source or add easyocr to system Python to enable. All other endpoints work out of the box.
 
-7-day free trial, then $49 one-time at [portal.fireal.dev](https://portal.fireal.dev). No subscription.
+7-day free trial, then $49 one-time at [fireal.dev](https://fireal.dev). No subscription.
 
 ## How it works
 
@@ -134,6 +134,6 @@ Switch when the 2-4 second screenshot latency is killing your agent's throughput
 
 ## Pricing
 
-7-day trial, all features. Then **$49 one-time** at [portal.fireal.dev](https://portal.fireal.dev). Per-machine activation, no subscription.
+7-day trial, all features. Then **$49 one-time** at [fireal.dev](https://fireal.dev). Per-machine activation, no subscription.
 
-[Issues](https://github.com/shameindemgg/eyehands/issues) · [portal.fireal.dev](https://portal.fireal.dev) · fireal6353@gmail.com
+[Issues](https://github.com/shameindemgg/eyehands/issues) · [fireal.dev](https://fireal.dev) · fireal6353@gmail.com
