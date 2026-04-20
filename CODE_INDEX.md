@@ -1,6 +1,6 @@
 # CODE_INDEX
 
-Public-facing docs repo for eyehands. No source code lives here. The server itself (Python + Nuitka-built `.exe`) ships from a private repo and is distributed via [portal.fireal.dev/eyehands/](https://portal.fireal.dev/eyehands/) and GitHub Releases.
+Public-facing docs repo for eyehands. No source code lives here. The server itself (Python + Nuitka-built `.exe`) ships from a private repo and is distributed via [fireal.dev/eyehands/](https://fireal.dev/eyehands/) and GitHub Releases.
 
 ## Purpose
 
@@ -29,7 +29,7 @@ eyehands-public/
 
 ## Key files
 
-- `README.md` — pitch, install instructions, full endpoint table, pricing ($49 one-time, 7-day trial). Must stay in sync with the real server's endpoints and the price shown on portal.fireal.dev.
+- `README.md` — pitch, install instructions, full endpoint table, pricing ($49 one-time, 7-day trial). Must stay in sync with the real server's endpoints and the price shown on fireal.dev.
 - `comparisons/*.md` — each file is a standalone comparison with one competing tool. Linked from the bottom of README.
 
 ## What's NOT here
